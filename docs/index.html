@@ -11,10 +11,10 @@
 <body>
   <div class="glow glow-a"></div><div class="glow glow-b"></div>
   <header>
-    <a class="brand" href="#top"><span class="shield">✓</span><strong>VaultPilot</strong></a>
+    <a class="brand" href="#top"><span class="shield">OK</span><strong>VaultPilot</strong></a>
     <nav>
       <span class="network"><i></i> Solana Devnet</span>
-      <a href="https://github.com/lal-akshat/vaultpilot" target="_blank" rel="noreferrer">Source code ↗</a>
+      <a href="https://github.com/lal-akshat/vaultpilot" target="_blank" rel="noreferrer">Source code</a>
     </nav>
   </header>
 
@@ -24,7 +24,7 @@
       <h1>Say what to pay.<br><span>Guardrails decide what can move.</span></h1>
       <p>VaultPilot converts plain-English requests into reviewable Solana payments while an Anchor program enforces every spending rule on-chain.</p>
       <div class="hero-actions">
-        <button class="primary" id="start-demo">Launch interactive demo →</button>
+        <button class="primary" id="start-demo">Launch interactive demo</button>
         <a class="secondary" href="https://github.com/lal-akshat/vaultpilot/blob/submission/README.md" target="_blank" rel="noreferrer">Read architecture</a>
       </div>
       <div class="metrics"><div><strong>~1 sec</strong><span>settlement</span></div><div><strong>&lt;$0.01</strong><span>typical fee</span></div><div><strong>100%</strong><span>program enforced</span></div></div>
@@ -43,7 +43,7 @@
       </div>
 
       <section class="connect-card" id="connect-card">
-        <div class="big-shield">✓</div>
+        <div class="big-shield">OK</div>
         <small>STEP 1</small>
         <h3>Connect a wallet to begin</h3>
         <p>The production app supports Wallet Standard wallets. This safe preview creates a temporary demo identity.</p>
@@ -70,23 +70,23 @@
 
           <div class="workspace">
             <article class="panel copilot">
-              <div class="card-title"><span class="spark">✦</span><div><small>AI PAYMENT COPILOT</small><h3>What should the vault pay?</h3></div></div>
+              <div class="card-title"><span class="spark">AI</span><div><small>AI PAYMENT COPILOT</small><h3>What should the vault pay?</h3></div></div>
               <textarea id="request">Send 0.05 SOL to 7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosP1ot for the API invoice</textarea>
-              <div class="composer-footer"><button class="text-button" id="unsafe">Try over-limit request</button><button class="ai-button" id="analyze">✦ Analyze intent</button></div>
-              <div class="empty" id="empty"><span>✦</span><p>Your structured payment and policy checks will appear here.</p></div>
+              <div class="composer-footer"><button class="text-button" id="unsafe">Try over-limit request</button><button class="ai-button" id="analyze">AI Analyze intent</button></div>
+              <div class="empty" id="empty"><span>AI</span><p>Your structured payment and policy checks will appear here.</p></div>
               <div class="review" id="review" hidden>
                 <div class="review-meta"><span><i></i> AI INTERPRETED</span><b>98% confidence</b></div>
                 <p id="summary">Prepare a payment.</p>
                 <div class="values"><div><small>AMOUNT</small><strong id="amount">0.05 SOL</strong></div><div><small>RECIPIENT</small><strong>7xKXtg…P1ot</strong></div></div>
-                <div class="checks"><div>✓ <span>Valid Solana recipient</span></div><div id="cap-check">✓ <span>Within 0.10 SOL payment cap</span></div><div id="day-check">✓ <span>Within daily remainder</span></div><div id="fund-check">✓ <span>Vault has enough SOL</span></div></div>
-                <button class="primary full" id="pay">Approve &amp; pay →</button>
-                <small class="safe-note">✓ AI proposes. Your wallet signs. The program enforces.</small>
+                <div class="checks"><div>OK <span>Valid Solana recipient</span></div><div id="cap-check">OK <span>Within 0.10 SOL payment cap</span></div><div id="day-check">OK <span>Within daily remainder</span></div><div id="fund-check">OK <span>Vault has enough SOL</span></div></div>
+                <button class="primary full" id="pay">Approve &amp; pay</button>
+                <small class="safe-note">OK AI proposes. Your wallet signs. The program enforces.</small>
               </div>
             </article>
 
             <aside>
-              <article class="panel fund-card"><div class="card-title"><span class="down">↓</span><div><small>FUND VAULT</small><h3>Add protected SOL</h3></div></div><p>Demo wallet balance <b>2.00 SOL</b></p><div class="fund-row"><div class="input"><input value="0.25" readonly><b>SOL</b></div><button class="primary" id="fund">Deposit</button></div></article>
-              <article class="panel policy"><div class="card-title"><span class="spark">✓</span><div><small>POLICY CONTROLS</small><h3>On-chain guardrails</h3></div><em id="status">ACTIVE</em></div><p>Daily usage <b id="usage">0 / 0.50 SOL</b></p><div class="meter"><i id="meter"></i></div><div class="policy-values"><div><small>PER PAYMENT</small><b>0.10 SOL</b></div><div><small>PER UTC DAY</small><b>0.50 SOL</b></div></div><button class="danger" id="pause">Pause vault</button></article>
+              <article class="panel fund-card"><div class="card-title"><span class="down">$</span><div><small>FUND VAULT</small><h3>Add protected SOL</h3></div></div><p>Demo wallet balance <b>2.00 SOL</b></p><div class="fund-row"><div class="input"><input value="0.25" readonly><b>SOL</b></div><button class="primary" id="fund">Deposit</button></div></article>
+              <article class="panel policy"><div class="card-title"><span class="spark">OK</span><div><small>POLICY CONTROLS</small><h3>On-chain guardrails</h3></div><em id="status">ACTIVE</em></div><p>Daily usage <b id="usage">0 / 0.50 SOL</b></p><div class="meter"><i id="meter"></i></div><div class="policy-values"><div><small>PER PAYMENT</small><b>0.10 SOL</b></div><div><small>PER UTC DAY</small><b>0.50 SOL</b></div></div><button class="danger" id="pause">Pause vault</button></article>
             </aside>
           </div>
         </div>
@@ -95,12 +95,12 @@
 
     <section class="architecture">
       <small>BUILT FOR SOLANA</small><h2>AI proposes. The program disposes.</h2>
-      <div class="architecture-grid"><article><b>01</b><span>✦</span><h3>Intent layer</h3><p>Extract an exact amount and user-supplied address. Strict validation rejects invented fields.</p><code>POST /api/intent</code></article><article><b>02</b><span>✓</span><h3>Policy layer</h3><p>Anchor checks authority, pause state, payment cap, daily cap, and PDA balance.</p><code>vaultpilot::pay</code></article><article><b>03</b><span>◎</span><h3>Settlement layer</h3><p>A wallet-approved instruction moves lamports and emits a composable event.</p><code>PaymentExecuted</code></article></div>
+      <div class="architecture-grid"><article><b>01</b><span>AI</span><h3>Intent layer</h3><p>Extract an exact amount and user-supplied address. Strict validation rejects invented fields.</p><code>POST /api/intent</code></article><article><b>02</b><span>OK</span><h3>Policy layer</h3><p>Anchor checks authority, pause state, payment cap, daily cap, and PDA balance.</p><code>vaultpilot::pay</code></article><article><b>03</b><span>SOL</span><h3>Settlement layer</h3><p>A wallet-approved instruction moves lamports and emits a composable event.</p><code>PaymentExecuted</code></article></div>
     </section>
   </main>
 
-  <div class="toast" id="toast" hidden><span>✓</span><p id="toast-text">Done</p><button id="dismiss">×</button></div>
-  <footer><div class="brand"><span class="shield">✓</span><strong>VaultPilot</strong></div><p>Built for the MLH Solana Hackathon · Devnet funds have no value.</p><a href="https://github.com/lal-akshat/vaultpilot">View source ↗</a></footer>
+  <div class="toast" id="toast" hidden><span>OK</span><p id="toast-text">Done</p><button id="dismiss">X</button></div>
+  <footer><div class="brand"><span class="shield">OK</span><strong>VaultPilot</strong></div><p>Built for the MLH Solana Hackathon · Devnet funds have no value.</p><a href="https://github.com/lal-akshat/vaultpilot">View source</a></footer>
   <script src="./demo.js"></script>
 </body>
 </html>

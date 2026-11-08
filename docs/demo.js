@@ -42,11 +42,11 @@ function analyze() {
   $('#amount').textContent = validAmount ? `${amount.toFixed(2)} SOL` : 'Missing';
   $('#summary').textContent = validAmount ? `Prepare a ${amount.toFixed(2)} SOL payment to the supplied contributor address.` : 'A positive SOL amount is required.';
   $('#cap-check').className = withinCap ? '' : 'failed';
-  $('#cap-check').innerHTML = `${withinCap ? '✓' : '×'} <span>${withinCap ? 'Within' : 'Exceeds'} 0.10 SOL payment cap</span>`;
+  $('#cap-check').innerHTML = `${withinCap ? 'OK' : 'X'} <span>${withinCap ? 'Within' : 'Exceeds'} 0.10 SOL payment cap</span>`;
   $('#day-check').className = withinDay ? '' : 'failed';
-  $('#day-check').innerHTML = `${withinDay ? '✓' : '×'} <span>${withinDay ? 'Within' : 'Exceeds'} daily remainder</span>`;
+  $('#day-check').innerHTML = `${withinDay ? 'OK' : 'X'} <span>${withinDay ? 'Within' : 'Exceeds'} daily remainder</span>`;
   $('#fund-check').className = funded ? '' : 'failed';
-  $('#fund-check').innerHTML = `${funded ? '✓' : '×'} <span>Vault ${funded ? 'has' : 'does not have'} enough SOL</span>`;
+  $('#fund-check').innerHTML = `${funded ? 'OK' : 'X'} <span>Vault ${funded ? 'has' : 'does not have'} enough SOL</span>`;
   $('#pay').disabled = !ready;
   $('#pay').dataset.amount = String(amount);
   $('#empty').hidden = true;
