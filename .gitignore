@@ -4,6 +4,7 @@ app/.next/
 app/out/
 anchor/target/
 target/
+*.tsbuildinfo
 
 # Local configuration
 .env
