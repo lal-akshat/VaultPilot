@@ -1,0 +1,20 @@
+{
+  "name": "vaultpilot",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "npm@11.4.2",
+  "workspaces": [
+    "app"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace app",
+    "build": "npm run build --workspace app",
+    "lint": "npm run lint --workspace app",
+    "typecheck": "npm run typecheck --workspace app",
+    "check:program": "cargo check --manifest-path anchor/Cargo.toml",
+    "verify": "npm run typecheck && npm run lint && npm run build && npm run check:program && npm audit --omit=dev"
+  }
+}

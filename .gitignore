@@ -1,0 +1,20 @@
+# Dependencies and build output
+node_modules/
+app/.next/
+app/out/
+anchor/target/
+target/
+
+# Local configuration
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Solana deployment keys (never commit private keys)
+.keys/
+anchor/target/deploy/*-keypair.json
+
+# Editor and OS files
+.DS_Store
+*.log
